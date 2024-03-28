@@ -1,4 +1,75 @@
+html {
+  font-size: 2vh;
+}
+
 .portfolioPicture{
   width: 100px;
   height: 100px;
+}
+
+header, .h1, .h2, .h3, .nameAndPic, nav, body, .myWorkSection {
+  display: flex;
+}
+
+.h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+
+.h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+header {
+  border-bottom: 2px solid black;
+  justify-content:  space-between;
+  padding: 0 0 10px 0;
+}
+
+.nameAndPic {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  gap: 3rem;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutMeSection {
+  border-bottom: 2px solid black;
+  padding: 0 0 10px 0;
+}
+
+.myWorkSection {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mainProjectImage {
+  height: 450px;
+  width: 450px;
+}
+
+.otherProjectImages {
+  height: 250px;
+  width: 250px;
 }
