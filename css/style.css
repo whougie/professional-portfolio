@@ -7,7 +7,7 @@ html {
   height: 100px;
 }
 
-header, .h1, .h2, .h3, .nameAndPic, nav, body, .myWorkSection {
+header, .h1, .h2, .h3, .nameAndPic, nav, body, .myWorkSection,  .mainProjectSection, .otherProjectsSection {
   display: flex;
 }
 
@@ -24,12 +24,13 @@ header, .h1, .h2, .h3, .nameAndPic, nav, body, .myWorkSection {
 .h3 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
+  text-align: center;
 }
 
 header {
   border-bottom: 2px solid black;
   justify-content:  space-between;
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
 }
 
 .nameAndPic {
@@ -56,20 +57,37 @@ body {
 
 .aboutMeSection {
   border-bottom: 2px solid black;
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
 }
 
 .myWorkSection {
+  justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  border-bottom: 2px solid black;
+  padding: 0 0 5px 0;
 }
 
 .mainProjectImage {
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
 }
 
 .otherProjectImages {
   height: 250px;
   width: 250px;
+}
+
+.mainProjectSection {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.otherProjectsSection {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
